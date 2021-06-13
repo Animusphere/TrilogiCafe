@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+<FrameLayout
+    android:id="@+id/fl_header_image"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/auth_header_img_height"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/content_desc"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_back_grad"
+        >
+    </ImageView>
+
+    <ImageView
+        android:layout_width="@dimen/auth_logo_widht_size"
+        android:layout_height="@dimen/auth_logo_widht_size"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tc_logo_log"
+        android:layout_gravity="center"
+        app:tint="@color/Snow">
+
+    </ImageView>
+
+</FrameLayout>
+    <com.example.trilogicafe.utils.XeronTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/title_activity_login"
+        android:textColor="@color/BlackButNot"
+        android:textSize="@dimen/title_text_sz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_header_image"
+        >
+    </com.example.trilogicafe.utils.XeronTextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="35dp"
+        android:hint="@string/prompt_email"
+        android:textColorHint="@color/DarkerBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        >
+        <com.example.trilogicafe.utils.TCEditText
+            android:id="@+id/et_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_padding"
+            android:textColor="@color/PaleFlame"
+            android:textSize="@dimen/et_textSz"
+            tools:text="@string/et_emailhint"
+            >
+        </com.example.trilogicafe.utils.TCEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="35dp"
+        android:hint="@string/prompt_password"
+        android:textColorHint="@color/DarkerBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_email"
+        >
+        <com.example.trilogicafe.utils.TCEditText
+            android:id="@+id/et_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="@dimen/et_padding"
+            android:textColor="@color/PaleFlame"
+            android:textSize="@dimen/et_textSz"
+            tools:text="yourpassword"
+            >
+        </com.example.trilogicafe.utils.TCEditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_lgn">
+
+            <TextView
+                android:id="@+id/tv_forgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/clickable_txtview_padding"
+                android:text="@string/forgot"
+                android:textColor="@color/PaleFlame"
+                android:textSize="@dimen/fotgot_password_txtSz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/til_password">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="@dimen/clickable_txtview_padding"
+                android:text="@string/regist"
+                android:textColor="@color/PaleFlame"
+                android:textSize="@dimen/fotgot_password_txtSz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"></TextView>
+        </LinearLayout>
+        <com.example.trilogicafe.utils.TCButton
+            android:id="@+id/btn_lgn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_back"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/btn_padding"
+            android:paddingBottom="@dimen/btn_padding"
+            android:text="@string/title_activity_login"
+            android:textColor="@color/Snow"
+           app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="509dp">
+
+        </com.example.trilogicafe.utils.TCButton>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

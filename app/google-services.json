@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "41727491749",
+    "project_id": "trilogicafe-81914",
+    "storage_bucket": "trilogicafe-81914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41727491749:android:b09c572afe2d17cd29d74c",
+        "android_client_info": {
+          "package_name": "com.example.trilogicafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41727491749-mnfo2ckteb0opo6oshbvlq0ubnahcs42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0XLO54KQbYgN5V2tiR_Oh0osSWroNhvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41727491749-mnfo2ckteb0opo6oshbvlq0ubnahcs42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

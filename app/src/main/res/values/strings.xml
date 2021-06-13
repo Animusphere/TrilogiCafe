@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Trilogi Cafe</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="content_desc">Image</string>
+    <string name="prompt_email">Email</string>
+    <string name="et_emailhint">trilogicafe@gmail.com</string>
+    <string name="prompt_password">Password</string>
+    <string name="regist">Registration</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="add_to">Add to Chart</string>
+    <string name="txt_name">Nama</string>
+    <string name="txt_address">Alamat</string>
+    <string name="txt_phone_num">Nomor Telpon</string>
+</resources>
