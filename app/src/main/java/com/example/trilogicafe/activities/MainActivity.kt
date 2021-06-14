@@ -110,8 +110,8 @@ class MainActivity : AppCompatActivity(), IDrinkLoadListener, ICartLoadListener 
         val gridLayoutManager = GridLayoutManager(this,2)
         recycler_drink.layoutManager = gridLayoutManager
         recycler_drink.addItemDecoration(SpaceItemDecoration( ))
-
         btnCart.setOnClickListener{startActivity(Intent(this,CartActivity::class.java))}
+        btnpfp.setOnClickListener{startActivity(Intent(this,ProfileActivity::class.java))}
     }
 
     override fun onDrinkLoadSuccess(drinkModeList: List<DrinkModel>?) {

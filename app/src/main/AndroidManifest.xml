@@ -12,20 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrilogiCafe">
-        <activity android:name=".activities.CartActivity">
-
-        </activity>
+        <activity android:name=".activities.ProfileActivity"></activity>
+        <activity android:name=".activities.CartActivity"></activity>
         <activity
             android:name=".activities.RegisterActivity"
-            android:theme="@style/Theme.TrilogiCafe.NoTitle">
-
-        </activity>
+            android:theme="@style/Theme.TrilogiCafe.NoTitle"></activity>
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.TrilogiCafe.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.TrilogiCafe.NoActionBar"></activity>
         <activity
             android:name=".activities.SplashActivity"
             android:screenOrientation="fullSensor"

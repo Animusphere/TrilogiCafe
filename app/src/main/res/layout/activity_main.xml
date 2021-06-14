@@ -14,15 +14,29 @@
         android:background="@color/Snow"
         android:orientation="horizontal"
         android:weightSum="16">
+        <FrameLayout
+            android:id="@+id/btnpfp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
 
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_person_24" />
+
+
+        </FrameLayout>
 
         <TextView
-            android:layout_width="229dp"
+            android:layout_width="8dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="11"
             android:gravity="center"
-            android:text="List Makanan"
+            android:text="List"
             android:textSize="30dp"
             android:textStyle="bold" />
 
